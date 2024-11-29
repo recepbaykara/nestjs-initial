@@ -19,13 +19,13 @@ import { User } from './—/user/user.entity';
     }),
     TypeOrmModule.forRoot({
       type: 'postgres',
-      database: 'nest',
+      database: 'nest_db',
       entities: [User],
       synchronize: true,
       host: 'localhost',
       port: 5434,
-      username: 'recep',
-      password: '12345',
+      username: 'your_username',
+      password: 'yourpassword',
       autoLoadEntities: true,
       logging: true
     }),
